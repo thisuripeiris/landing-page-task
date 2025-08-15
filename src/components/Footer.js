@@ -49,10 +49,10 @@ function Footer() {
 
         <div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center border-top pt-3 mt-3">
           <div className="mb-2 mb-md-0 priv-policy">
-            <a href="#" className="text-white me-3">
+            <a href="#privacy-plicy" className="text-white me-3">
               Privacy Policy
             </a>
-            <a href="#privacy-policy" className="text-white">
+            <a href="#ptermscondition" className="text-white">
               Terms & Conditions
             </a>
           </div>
