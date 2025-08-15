@@ -1,3 +1,4 @@
+
 #hero {
   position: relative;
   width: 100%;
@@ -62,49 +63,3 @@
   transform: scale(1.05);
 }
 
-/* ======= Media Queries ======= */
-
-/* Tablets (768px) */
-@media (max-width: 768px) {
-  #hero .hero-image-container {
-    height: 50vh;
-  }
-  
-  #hero .hero-text-box {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin: -50px auto 0;
-    max-width: 90%;
-    transform: none;
-  }
-  
-  #hero .hero-title {
-    font-size: 1.8rem;
-  }
-  
-  #hero .hero-btn {
-    text-align: center;
-  }
-}
-
-/* Mobile (375px) */
-@media (max-width: 376px) {
-  #hero .hero-image-container {
-    height: 40vh;
-  }
-   #hero .hero-btn {
-    width: fit-content;
-    text-align: center;
-    font-size: 0.7rem;
-  }
-  
-  #hero .hero-text-box {
-    margin-top: -30px;
-    padding: 15px;
-  }
-  
-  #hero .hero-title {
-    font-size: 1.4rem;
-  }
-}

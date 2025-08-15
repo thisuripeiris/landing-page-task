@@ -1,7 +1,7 @@
 #faq {
   padding: 50px 0;
   background-color: #f8f9fa;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 }
 
 #faq .container{
@@ -18,15 +18,43 @@
 }
 
 #faq .faq-card {
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
+  /* border: 1px solid #dee2e6;
+  border-radius: 16px;
   margin-bottom: 15px;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
+
+    border: none;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+
+  
+}
+#faq .faq-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #f28d35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
+
 #faq .faq-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+    transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+}
+#faq .faq-card:hover::before {
+  opacity: 1;
 }
 
 
@@ -43,52 +71,17 @@
 }
 
 #faq .accordion-button:focus {
-  box-shadow: none;
+  /* box-shadow: none; */
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  outline: none;
 }
-
+/* #faq .accordion-button:hover {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(242, 141, 53, 0.05) 100%);
+} */
 #faq .accordion-body{
     color: #6f6c90;
 
-}
+} 
+    
+ 
 
-/* ======= Media Queries ======= */
-
-/* Tablets (768px) */
-@media (max-width: 768px) {
-#faq {
-  padding: 0% 2%;
-  margin-bottom: 10%;
-}
-#faq .container{
-  max-width: 70%;
-}
-#faq .faqTopic {
-  font-size: 1.3rem;
-}
-  
-#faq .accordion-button {
-  font-size: 0.9rem;
-}
-#faq .accordion-body{
-    font-size: 0.85rem;
-
-}
-}
-
-/* Mobile (375px) */
-@media (max-width: 376px) {
-#faq  h2 {
-  font-size: 1.2rem;
-}
-#faq .container{
-  max-width: 80%;
-}
-  
-#faq .accordion-button {
-  font-size: 0.8rem;
-}
-#faq .accordion-body{
-    font-size: 0.7rem;
-
-}
-}
