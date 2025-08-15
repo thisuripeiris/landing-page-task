@@ -12,7 +12,7 @@ function Hero() {
         <h1 className="hero-title">
           We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
         </h1>
-        <a href="#" className="hero-btn">
+        <a href="#getstart" className="hero-btn">
           GET FREE CONSULTATION
         </a>
       </div>

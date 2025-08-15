@@ -5,8 +5,6 @@ import "../styles/Services.css";
 import "../../src/App.css";
 
 function Services() {
-  const containers = document.querySelectorAll(".container");
-
   return (
     <section id="services" className="py-5">
       <div className="container">
@@ -22,7 +20,7 @@ function Services() {
               methods to respond to different intents shown by your potential
               customers who interact with your business online.
             </p>
-            <a href="#" className="btn btn-warning">
+            <a href="#learn-more" className="btn btn-warning">
               LEARN MORE
             </a>
           </div>
@@ -45,7 +43,7 @@ function Services() {
               We provide a clear concept and strategic overview to find the most
               efficient model for your business.
             </p>
-            <a href="#" className="btn btn-warning">
+            <a href="#learn-more" className="btn btn-warning">
               LEARN MORE
             </a>
           </div>

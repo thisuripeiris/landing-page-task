@@ -52,23 +52,23 @@ function Footer() {
             <a href="#" className="text-white me-3">
               Privacy Policy
             </a>
-            <a href="#" className="text-white">
+            <a href="#privacy-policy" className="text-white">
               Terms & Conditions
             </a>
           </div>
 
           {/* Social icons */}
           <div className="social-icons mb-2 mb-md-0">
-            <a href="#" className="text-white me-3">
+            <a href="#facebook" className="text-white me-3">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href="#" className="text-white me-3">
+            <a href="#instagram" className="text-white me-3">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="text-white me-3">
+            <a href="#twitter" className="text-white me-3">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#" className="text-white">
+            <a href="#linkedin" className="text-white">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
