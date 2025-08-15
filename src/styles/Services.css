@@ -66,5 +66,10 @@
 
 #services .btn:hover {
   color: #2f2f2f;
+  background: linear-gradient(
+    to left,
+    rgba(28, 189, 221, 0.9),
+    rgba(77, 202, 121, 0.9)
+  );
   transform: scale(1.05);
 }
