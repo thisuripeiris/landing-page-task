@@ -1,11 +1,24 @@
 #hero {
   position: relative;
   width: 100%;
+  margin-top: 60px; 
 }
 
-.hero-text-box {
+#hero .hero-image-container {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero .hero-text-box {
   position: absolute;
-  bottom: 8%; 
+  bottom: 8%;
   left: 5%;
   max-width: 630px;
   background: linear-gradient(
@@ -19,72 +32,79 @@
   flex-direction: column;
   padding: 20px;
   transition: transform 0.3s ease;
-  
 }
 
-.hero-text-box:hover {
+#hero .hero-text-box:hover {
   transform: translateY(-5px);
 }
 
-.hero-text-box .btn{
-    background-color: #f28d35;
-    width: 40%;
-    color: #fff;
-}
-
-
-.hero-text-box .btn:hover{
-    background-color: #f28d35d0;
-    color: #2f2f2f;
-    transform: scale(1.05);
-}
-
-#hero h1 {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  /* font-family: 'Inter', sans-serif; */
-  font-optical-sizing: auto;
-  font-weight: 700;
+#hero .hero-title {
   font-size: 2.7rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#hero .hero-btn {
+  background-color: #f28d35;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 40%;
+  transition: all 0.3s ease;
+}
+
+#hero .hero-btn:hover {
+  background-color: #f28d35d0;
+  color: #2f2f2f;
+  transform: scale(1.05);
 }
 
 /* ======= Media Queries ======= */
 
-/* Tablets */
+/* Tablets (768px) */
 @media (max-width: 768px) {
-  #hero {
-    height: 60vh;
+  #hero .hero-image-container {
+    height: 50vh;
   }
-
-  .hero-text-box {
+  
+  #hero .hero-text-box {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: -50px auto 0;
     max-width: 90%;
-    bottom: 20px;
-    left: 20px;
-    padding: 15px;
+    transform: none;
   }
-
-  #hero h1 {
+  
+  #hero .hero-title {
     font-size: 1.8rem;
   }
-
-
+  
+  #hero .hero-btn {
+    text-align: center;
+  }
 }
 
 /* Mobile (375px) */
-@media (max-width: 375px) {
-  #hero {
-    height: 50vh;
+@media (max-width: 376px) {
+  #hero .hero-image-container {
+    height: 40vh;
   }
-
-  .hero-text-box {
-    bottom: 15px;
-    left: 15px;
-    padding: 12px;
+   #hero .hero-btn {
+    width: fit-content;
+    text-align: center;
+    font-size: 0.7rem;
   }
-
-  #hero h1 {
+  
+  #hero .hero-text-box {
+    margin-top: -30px;
+    padding: 15px;
+  }
+  
+  #hero .hero-title {
     font-size: 1.4rem;
   }
-
-
 }

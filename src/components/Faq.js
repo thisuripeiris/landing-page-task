@@ -10,7 +10,7 @@ export default function Faq() {
   return (
     <section id="faq" className="faq-section">
       <div className="container">
-        <h2>Frequently Asked Questions</h2>
+        <h2 className="faqTopic">Frequently Asked Questions</h2>
         <div className="accordion" id="faqAccordion">
           {displayedFaqs.map((faq, index) => (
             <div className="accordion-item faq-card" key={index}>
